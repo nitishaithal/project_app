@@ -5,3 +5,11 @@ User.create!(name:  "Nitish Aithal",
               admin: true,
               activated: true,
              activated_at: Time.zone.now)
+
+User.create!(name:  "sharat kanti",
+             email: "sharat.kanti@gmail.com",
+             password:              "sharat123",
+             password_confirmation: "sharat123",
+              admin: true,
+              activated: true,
+             activated_at: Time.zone.now)

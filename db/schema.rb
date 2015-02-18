@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150218053503) do
     t.string   "remember_digest"
     t.boolean  "admin",              default: false
     t.string   "activation_deigest"
-    t.boolean  "activate",           default: false
+    t.boolean  "activated",          default: true
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.datetime "reset_send_at"
