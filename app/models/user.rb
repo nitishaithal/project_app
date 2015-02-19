@@ -19,6 +19,12 @@ class User < ActiveRecord::Base
     SecureRandom.urlsafe_base64
   end
   
+   # Returns true if a password reset has expired.
+  def password_reset_expired?
+    reset_sent_at < 2.hours.ago
+  end
+
+  
     # Remembers a user in the database for use in persistent sessions.
   #def remember
    # self.remember_token = User.new_token
